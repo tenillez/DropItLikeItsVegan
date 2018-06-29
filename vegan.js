@@ -15,21 +15,21 @@ var guests = [
     {
       routeName: "cust1",
       name: "Yoda",
-      number: 444-333-333,
+      number: "444-333-333",
       Email: "test@test.com",
       uniqueid: 12
     },
     {
       routeName: "cust2",
       name: "Rocky",
-      number: 444-333-333,
+      number: "444-333-333",
       Email: "test2@test.com",
       uniqueid: 13
     },
     {
       routeName: "cust3",
       name: "Big Bird",
-      number: 444-333-333,
+      number: "444-333-333",
       Email: "test1@test.com",
       uniqueid: 14
     }
@@ -47,10 +47,13 @@ app.get("/tables", function(req, res){
     res.sendFile(path.join(__dirname, "tables.html"));
 });
 
+app.get("/api/guests", function(req, res) {
+    console.log(guests);
+    return res.json(guests);
+});
 
 app.get("/api/guests/:guests", function (req,res){
     var chosen = req.params.guests;
-
     console.log(chosen);
 
     for (var i = 0; i < guests.length; i++) {
