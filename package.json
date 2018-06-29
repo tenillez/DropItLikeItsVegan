@@ -1,0 +1,24 @@
+{
+  "name": "HotRestaurant",
+  "version": "1.0.0",
+  "description": "HotRestaurant app for class assignment",
+  "main": "vegan.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tenillez/HotRestaurant.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tenillez/HotRestaurant/issues"
+  },
+  "homepage": "https://github.com/tenillez/HotRestaurant#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  }
+}
